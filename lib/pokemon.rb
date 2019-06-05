@@ -1,23 +1,25 @@
-require 'pry'
-class Pokemon
-  attr_accessor :name, :number, :description
-  @@pokedex
-  def initialize(name, number, description)
-    @name = name
-    @number = number
-    @description = description
-    @@pokedex << self
+class Pokemon 
+  attr_accessor :name, :profile_url, :pokemon_generation, :pokedex_number, :pokemon_type, :description
+  @@pokedex = [] 
+  @@all = []
+  def initialize(pokemon_hash)
+    pokemon_hash.each {|key, value| self.send(("#{key}="), value)}
+    @@all << self
   end
-  
-  def self.catch_pokemon
-    PokemonScraper.scrape_pokemon.sample
-    
-    @@pokedex.select{|c| c.is_a?(self)}.sample
-    
-  end
-  
-  def self.pokedex
-    @@pokedex
-  end
-end
 
+  def self.create_from_pokedex(pokemon_array)
+    pokemon_array.each do |pokemon|
+      self.new(pokemon)
+    end
+  end
+
+  def add_poke_card(poke_card_hash)
+     poke_card_hash.each do |key, value|
+      self.send(("#{key}="), value)
+     end 
+  end #end pokecard
+
+  def self.all
+    @@all
+  end
+end #end class
