@@ -22,16 +22,20 @@ BASE_PATH = "https://rankedboost.com"
     rando_poke = Pokemon.all.sample
     puts "Nice throw! You caught #{rando_poke.name}!"
     @@pokedex << rando_poke
-    puts "Would you like to know more about #{rando_poke.name}? Y/N"
+    puts "Would you like to know more about #{rando_poke.name}? y/n"
     user_input = gets.chomp
-    if user_input == "Y"
+    if user_input == "y"
       puts " - Belongs to: #{rando_poke.pokemon_generation}"
       puts " - Pokedex # #{rando_poke.pokedex_number}"
       puts " - Type: #{rando_poke.pokemon_type}"
       puts " - Details: #{rando_poke.description}"
     end
-    run
+    puts "Would you like to see your pokedex? y/n"
+    user_input2 = gets.chomp
+    if user_input2 == "y"
+      show_pokedex
     end
+  end
 
 
   def show_all
@@ -42,12 +46,11 @@ BASE_PATH = "https://rankedboost.com"
       puts " - Type: #{pokemon.pokemon_type}"
       puts " - Details: #{pokemon.description}"
     end
-    run
   end
 
   def show_pokedex
     @@pokedex.each do |pokemon|
-      puts pokemon.name
+      puts "# #{pokemon.pokedex_number} - #{pokemon.name}"
     end
     run
   end
@@ -66,6 +69,31 @@ BASE_PATH = "https://rankedboost.com"
     case user_input
       when 'catch'
         catch_em
+        run_again
+      when 'see all'
+        show_all
+        run_again
+      when 'pokedex'
+        show_pokedex
+        run_again
+      when 'exit'
+        return
+      else
+        run_again
+    end
+  end
+
+  def run_again
+    puts "What would you like to do?"
+    puts "'catch': to catch a new pokemon"
+    puts "'see all': to see all catchable pokemons to catch"
+    puts "'pokedex': to see your current pokedex"
+    puts "'exit': to quit"
+    user_input = gets.chomp
+
+    case user_input
+      when 'catch'
+        catch_em
       when 'see all'
         show_all
       when 'pokedex'
@@ -73,7 +101,7 @@ BASE_PATH = "https://rankedboost.com"
       when 'exit'
         return
       else
-        run
+        run_again
     end
   end
 end
