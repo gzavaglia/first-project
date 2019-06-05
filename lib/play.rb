@@ -1,3 +1,7 @@
+require_relative "../lib/pokemonscraper.rb"
+require_relative "../lib/pokemon.rb"
+require 'nokogiri'
+
 class Play
 @@pokedex = []
 BASE_PATH = "https://rankedboost.com"
