@@ -1,8 +1,10 @@
 # First::Project
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/first/project`. To experiment with that code, run `bin/console` for an interactive prompt.
+This is my  first project with Flatiron school. This program is supposed to be simpler, uglier version of any Pokemon game. 
 
-TODO: Delete this and the text above, and describe your gem
+<!--Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/first/project`. To experiment with that code, run `bin/console` for an interactive prompt.-->
+
+<!--TODO: Delete this and the text above, and describe your gem-->
 
 ## Installation
 
@@ -22,7 +24,7 @@ Or install it yourself as:
 
 ## Usage
 
-TODO: Write usage instructions here
+Once the program starts, you'll be prompted to choose from several options. You can see all the pokemon available to catch with "see all", catch a random pokemon with 'catch' or see your pokedex with the pokemons that you already caught with "pokedex". You'll be also able to see details of pokemon once you catch them and see the details of every pokemon when you select "see all".
 
 ## Development
 
