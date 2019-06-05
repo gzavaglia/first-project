@@ -1,6 +1,7 @@
 require_relative "../lib/pokemonscraper.rb"
 require_relative "../lib/pokemon.rb"
 require 'nokogiri'
+require 'open-uri'
 
 class Play
 @@pokedex = []
