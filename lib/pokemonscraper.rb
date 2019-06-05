@@ -1,4 +1,4 @@
-require 'pry'
+#require 'pry'
 require 'open-uri'
 require 'nokogiri'
 
@@ -33,7 +33,6 @@ while i<reduced_pokemon.length
       end
       return all
   end 
-    #puts pokemon_names.sample
 
 #scraping the 2nd link with all the info 
 

@@ -77,3 +77,5 @@ BASE_PATH = "https://rankedboost.com"
     end
   end
 end
+
+Play.new.run
