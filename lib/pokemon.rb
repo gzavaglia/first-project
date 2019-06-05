@@ -1,3 +1,4 @@
+require 'pry'
 class Pokemon
   attr_accessor :name, :number, :description
   @@pokedex
@@ -8,7 +9,15 @@ class Pokemon
     @@pokedex << self
   end
   
-  def catch_pokemon
-    @@all.select{|c| c.is_a?(self)}.sample
+  def self.catch_pokemon
+    PokemonScraper.scrape_pokemon.sample
+    
+    @@pokedex.select{|c| c.is_a?(self)}.sample
+    
+  end
+  
+  def self.pokedex
+    @@pokedex
   end
 end
+

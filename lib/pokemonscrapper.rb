@@ -13,10 +13,12 @@ class PokemonScraper
     #here I get all the names 
     pokemon_names = parsed_pokemon.css("span.PokemonName").map(&:text)
     #this gives me all the links 
+    
     parsed_pokemon.css("span.pokemontypeImgs a").collect do |pok_link|
       pokemon_links = pok_link.attribute('href').value
     end
+  
   end #end method 
 end
 
-PokemonScraper.scrape_pokemon
+#PokemonScraper.scrape_pokemon
