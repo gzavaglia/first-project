@@ -51,6 +51,15 @@ BASE_PATH = "https://rankedboost.com"
   def show_pokedex
     @@pokedex.each do |pokemon|
       puts "# #{pokemon.pokedex_number} - #{pokemon.name}"
+      puts "Would you like to see more information about your Pokemon? y/n"
+      user_input = gets.chomp
+      if user_input == 'y'
+        puts "#{pokemon.name.upcase}"
+        puts " - Belongs to: #{pokemon.pokemon_generation}"
+        puts " - Pokedex # #{pokemon.pokedex_number}"
+        puts " - Type: #{pokemon.pokemon_type}"
+        puts " - Details: #{pokemon.description}"
+      end
     end
     run
   end
@@ -84,7 +93,7 @@ BASE_PATH = "https://rankedboost.com"
   end
 
   def run_again
-    puts "What would you like to do?"
+    
     puts "'catch': to catch a new pokemon"
     puts "'see all': to see all catchable pokemons to catch"
     puts "'pokedex': to see your current pokedex"
