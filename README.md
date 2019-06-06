@@ -1,10 +1,14 @@
-# First::Project
+# POKEMON-no-GO
+### First Project with Flatiron
 
 This is my  first project with Flatiron school. This program is supposed to be simpler, uglier version of any Pokemon game. 
+Once you have the program up and running, you'll be presented a four options:
+1. Catch! and you'll will catch a Pokemon
+2. Show all - here you can choose to see all the Pokemon that are available for you to catch and their information. 
+3. Pokedex - Here you'll be able to see which Pokemon you caught
+4. Exit the program.
 
-<!--Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/first/project`. To experiment with that code, run `bin/console` for an interactive prompt.-->
-
-<!--TODO: Delete this and the text above, and describe your gem-->
+Choose wisely and please be gentle.
 
 ## Installation
 
@@ -24,7 +28,7 @@ Or install it yourself as:
 
 ## Usage
 
-Once the program starts, you'll be prompted to choose from several options. You can see all the pokemon available to catch with "see all", catch a random pokemon with 'catch' or see your pokedex with the pokemons that you already caught with "pokedex". You'll be also able to see details of pokemon once you catch them and see the details of every pokemon when you select "see all".
+The program uses the website [RANKEDBOOST](https://rankedboost.com/pokemon-go/) to collect all the information. The first level of information is comming from it's Pokedex option (where we get the name and url), and the second level goes into each specific information of each Pokemon. 
 
 ## Development
 
