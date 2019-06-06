@@ -30,9 +30,11 @@ Or install it yourself as:
 
 The program uses the website [RANKEDBOOST](https://rankedboost.com/pokemon-go/) to collect all the information. The first level of information is comming from it's Pokedex option (where we get the name and url), and the second level goes into each specific information of each Pokemon. 
 
+Anytime you catch a new Pokemon, you'll have the option to see its details and/or see your Pokedex. 
+
 ## Development
 
-After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/console` for an interactive prompt that will allow you to experiment.
+After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/run` for an interactive prompt that will allow you to experiment.
 
 To install this gem onto your local machine, run `bundle exec rake install`. To release a new version, update the version number in `version.rb`, and then run `bundle exec rake release`, which will create a git tag for the version, push git commits and tags, and push the `.gem` file to [rubygems.org](https://rubygems.org).
 
