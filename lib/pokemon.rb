@@ -15,7 +15,7 @@ class Pokemon
 
   def add_poke_card(poke_card_hash)
      poke_card_hash.each do |key, value|
-      self.send(("#{key}="), value)
+       self.send(("#{key}="), value)
      end 
   end #end pokecard
 
