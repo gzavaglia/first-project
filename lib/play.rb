@@ -37,7 +37,6 @@ BASE_PATH = "https://rankedboost.com"
     end
   end
 
-
   def show_all
     Pokemon.all.each do |pokemon|
       puts "#{pokemon.name.upcase}"
@@ -148,5 +147,5 @@ BASE_PATH = "https://rankedboost.com"
   
 end
 
-Play.new.run
+#Play.new.run
 #Play.new.find_pokemon_by_name
