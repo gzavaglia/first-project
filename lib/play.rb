@@ -134,7 +134,7 @@ BASE_PATH = "https://rankedboost.com"
         show_all
       when 'pokedex'
         show_pokedex
-      when 'find by name'
+      when 'find'
         find_pokemon_by_name
       when 'exit'
         return
