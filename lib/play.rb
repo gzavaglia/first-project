@@ -93,6 +93,7 @@ BASE_PATH = "https://rankedboost.com"
     puts "What would you like to do?"
     puts "'catch': to catch a new pokemon"
     puts "'see all': to see all catchable pokemons to catch"
+    puts "'find': find the data for any pokemon on the list, by name"
     puts "'pokedex': to see your current pokedex"
     puts "'exit': to quit"
     user_input = gets.chomp
@@ -107,7 +108,7 @@ BASE_PATH = "https://rankedboost.com"
       when 'pokedex'
         show_pokedex
         run_again
-        when 'find by name'
+        when 'find'
         find_pokemon_by_name
         run_again
       when 'exit'
@@ -121,6 +122,7 @@ BASE_PATH = "https://rankedboost.com"
     
     puts "'catch': to catch a new pokemon"
     puts "'see all': to see all catchable pokemons to catch"
+    puts "'find': find the data for any pokemon on the list, by name"
     puts "'pokedex': to see your current pokedex"
     puts "'exit': to quit"
     user_input = gets.chomp
