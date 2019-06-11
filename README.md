@@ -33,6 +33,10 @@ The program uses the website [RANKEDBOOST](https://rankedboost.com/pokemon-go/) 
 
 Anytime you catch a new Pokemon, you'll have the option to see its details and/or see your Pokedex. 
 
+##Running the tests
+
+In order to make sure everything works, type each option as prompted to see how everything works in an "ideal world". To test what would happened if a word is misspelled, type anything else; you should be prompted to select an option again if no word matches any on the list. Try all the options in any of the menus. If a word is not utilized, you should expect to see the menu being prompted again in order for you to type the write word. Do as you can to break it! I tried to make sure I accounted for any possibility.  
+
 ## Development
 
 After checking out the repo, run `bin/setup` to install dependencies. You can also run `bin/run` for an interactive prompt that will allow you to experiment.
