@@ -68,7 +68,6 @@ BASE_PATH = "https://rankedboost.com"
     end #end pokedex.len 
   end # pokedex method 
   
-  
   def find_pokemon_by_name
     puts "Please, type the name of the Pokemon you'd like to see"
     user_input = gets.chomp
@@ -122,7 +121,6 @@ BASE_PATH = "https://rankedboost.com"
   end
 
   def run_again
-    
     puts "'catch': to catch a new pokemon"
     puts "'see all': to see all catchable pokemons to catch"
     puts "'find': find the data for any pokemon on the list, by name"
@@ -146,8 +144,6 @@ BASE_PATH = "https://rankedboost.com"
         puts " "
       when 'exit'
         return
-      # else
-      #   run_again
     end
     run_again
   end
