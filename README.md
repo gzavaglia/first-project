@@ -21,6 +21,7 @@ Before you run the app, make sure you install Bundler by typing in the command l
 ```
 bundle install
 ```
+## Play 
 
 This project is coded using Ruby, so make sure you have the latest version installed. 
 After Bundler is installed you can 'cd' into the first-project folder and run the app to play with it by typing
@@ -33,7 +34,7 @@ The program uses the website [RANKEDBOOST](https://rankedboost.com/pokemon-go/) 
 
 Anytime you catch a new Pokemon, you'll have the option to see its details and/or see your Pokedex. 
 
-##Running the tests
+## Running the tests
 
 In order to make sure everything works, type each option as prompted to see how everything works in an "ideal world". To test what would happened if a word is misspelled, type anything else; you should be prompted to select an option again if no word matches any on the list. Try all the options in any of the menus. If a word is not utilized, you should expect to see the menu being prompted again in order for you to type the write word. Do as you can to break it! I tried to make sure I accounted for any possibility.  
 
