@@ -69,28 +69,22 @@ BASE_PATH = "https://rankedboost.com"
       catch_em
     end #end user2 
   end #end pokedex.len 
-  
-  
-  
-  
   end # pokedex method 
   
   
-  # def find_pokemon_by_name
-  #   puts "Please, type the name of the Pokemon you'd like to see"
-  #   user_input = gets.chomp
-  #   Pokemon.all.find {|pokemon| pokemon.name.upcase == user_input.upcase}
-  #   #   #if user_input.upcase == pokemon.name.upcase
-  #   #     puts "#{pokemon.name.upcase}"
-  #   #     puts " - Belongs to: #{pokemon.pokemon_generation}"
-  #   #     puts " - Pokedex # #{pokemon.pokedex_number}"
-  #   #     puts " - Type: #{pokemon.pokemon_type}"
-  #   #     puts " - Details: #{pokemon.description}"
-  #   #   else 
-  #   #     puts "Sorry, I couldn't find your pokemon :( "
-  #   #   end
-  #   # #end
-  # end
+  def find_pokemon_by_name
+    puts "Please, type the name of the Pokemon you'd like to see"
+    user_input = gets.chomp
+    Pokemon.all.each do |pokemon|
+      if user_input.upcase == pokemon.name.upcase
+        puts "#{pokemon.name.upcase}"
+        puts " - Belongs to: #{pokemon.pokemon_generation}"
+        puts " - Pokedex # #{pokemon.pokedex_number}"
+        puts " - Type: #{pokemon.pokemon_type}"
+        puts " - Details: #{pokemon.description}"
+      end
+    end
+  end
 
   def run
     make_pokedex
@@ -112,6 +106,9 @@ BASE_PATH = "https://rankedboost.com"
         run_again
       when 'pokedex'
         show_pokedex
+        run_again
+        when 'find by name'
+        find_pokemon_by_name
         run_again
       when 'exit'
         return
