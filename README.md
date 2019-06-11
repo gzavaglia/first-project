@@ -1,5 +1,5 @@
 # POKEMON-no-GO
-### First Project with Flatiron
+## First Project with Flatiron
 
 This is my  first project with Flatiron school. This program is supposed to be simpler, uglier version of any Pokemon game. 
 Once you have the program up and running, you'll be presented a four options:
@@ -11,20 +11,21 @@ Once you have the program up and running, you'll be presented a four options:
 Choose wisely and please be gentle.
 
 ## Installation
+### Prerequisites 
+You should first clone the project to your computer by running 
 
-Add this line to your application's Gemfile:
+``` git clone git@github.com:gzavaglia/first-project.git ``` 
 
-```ruby
-gem 'first-project'
+Before you run the app, make sure you install Bundler by typing in the command line: 
+
+```
+bundle install
 ```
 
-And then execute:
+This project is coded using Ruby, so make sure you have the latest version installed. 
+After Bundler is installed you can 'cd' into the first-project folder and run the app to play with it by typing
 
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install first-project
+``` bin/run ``` 
 
 ## Usage
 
