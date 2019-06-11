@@ -21,12 +21,14 @@ Before you run the app, make sure you install Bundler by typing in the command l
 ```
 bundle install
 ```
-## Play 
+### Play 
 
 This project is coded using Ruby, so make sure you have the latest version installed. 
 After Bundler is installed you can 'cd' into the first-project folder and run the app to play with it by typing
 
-``` bin/run ``` 
+``` 
+bin/run
+``` 
 
 ## Usage
 
