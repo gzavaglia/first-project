@@ -84,6 +84,9 @@ BASE_PATH = "https://rankedboost.com"
         puts " - Details: #{pokemon.description}"
       end
     end
+    if Pokemon.all.any? {|pokemon| user_input.upcase == pokemon.name.upcase} == false
+      puts "Oops! I couldn't find that Pokemon... To try again, type 'find'"
+    end
   end
 
   def run
@@ -101,15 +104,18 @@ BASE_PATH = "https://rankedboost.com"
     case user_input
       when 'catch'
         catch_em
+        puts " "
         run_again
       when 'see all'
         show_all
+        puts " "
         run_again
       when 'pokedex'
         show_pokedex
         run_again
         when 'find'
         find_pokemon_by_name
+        puts " "
         run_again
       when 'exit'
         return
@@ -129,13 +135,18 @@ BASE_PATH = "https://rankedboost.com"
 
     case user_input
       when 'catch'
+        
         catch_em
+        puts " "
       when 'see all'
         show_all
+        puts " "
       when 'pokedex'
         show_pokedex
+        puts " "
       when 'find'
         find_pokemon_by_name
+        puts " "
       when 'exit'
         return
       # else
