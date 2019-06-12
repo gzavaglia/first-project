@@ -16,11 +16,13 @@ You should first clone the project to your computer by running
 
 ``` git clone git@github.com:gzavaglia/first-project.git ``` 
 
-Before you run the app, make sure you install Bundler by typing in the command line: 
+Before you run the app, make sure you have the Bundle installed... Although if not, this program will do it for ya! with 
 
 ```
 bundle install
 ```
+on the set up! 
+
 ### Play 
 
 This project is coded using Ruby, so make sure you have the latest version installed. 
