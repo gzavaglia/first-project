@@ -49,10 +49,9 @@ BASE_PATH = "https://rankedboost.com"
 
   def show_pokedex
     if @@pokedex.length > 0
+      puts "   POKEDEX   "
       @@pokedex.each do |pokemon|
-        puts "   POKEDEX   "
-        puts "# #{pokemon.pokedex_number} - #{pokemon.name}"
-        puts "#{pokemon.name.upcase}"
+        puts "# #{pokemon.pokedex_number} - #{pokemon.name.upcase}"
         puts " - Belongs to: #{pokemon.pokemon_generation}"
         puts " - Pokedex # #{pokemon.pokedex_number}"
         puts " - Type: #{pokemon.pokemon_type}"
