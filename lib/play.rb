@@ -88,35 +88,7 @@ BASE_PATH = "https://rankedboost.com"
     make_pokedex
     add_details
     puts "Hello! Welcome to Pokemon-NO-GO"
-    puts "What would you like to do?"
-    puts "'catch': to catch a new pokemon"
-    puts "'see all': to see all catchable pokemons to catch"
-    puts "'find': find the data for any pokemon on the list, by name"
-    puts "'pokedex': to see your current pokedex"
-    puts "'exit': to quit"
-    user_input = gets.chomp
-
-    case user_input
-      when 'catch'
-        catch_em
-        puts " "
-        run_again
-      when 'see all'
-        show_all
-        puts " "
-        run_again
-      when 'pokedex'
-        show_pokedex
-        run_again
-        when 'find'
-        find_pokemon_by_name
-        puts " "
-        run_again
-      when 'exit'
-        return
-      else
-        run_again
-    end
+    run_again
   end
 
   def run_again
