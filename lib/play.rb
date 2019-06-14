@@ -120,6 +120,3 @@ BASE_PATH = "https://rankedboost.com"
   end
   
 end
-
-#Play.new.run
-#Play.new.find_pokemon_by_name
